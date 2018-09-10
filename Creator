@@ -1,0 +1,46 @@
+#!/usr/bin/bash
+#Tools Pemudah / Pemersingkat
+#Ngapain Lu ke Sini, Mau recode?
+#Gua Janji Gak Bakal Recode
+#Tepatin Janji Lu
+#Janji di Bawa Mati
+a='\e[1;31m'
+b='\e[1;32m'
+c='\e[1;33m'
+d='\e[1;34m'
+e='\e[1;35m'
+f='\e[1;36m'
+g='\e[1;37m'
+
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo -e $a '=>\033[97;1m ( CTRL + C ) \033[91;1mTerdeteksi '
+sleep 1
+echo -e $c '=> Terimakasih Sudah Memakai Tools Saya ini '
+sleep 1
+echo -e $g '=> \033[91;1mMr.GxDDP \033[97;1m[$]=> \033[91;1mEnter Untuk Lanjut Keluar '
+read enter
+exit
+}
+
+clear
+echo -e $f ''
+cat GxDDP.txt
+echo -e $e '     •••••••••••••••••••••••••••••••••••••••'
+echo -e $e '     •          \033[94;1mAuthor : \033[96;1mMr.GxDDP          \033[95;1m•'
+echo -e $e '     • \033[94;1mTeam : \033[96;1mBangZat PhiSingeRs InDoNeSia \033[95;1m•'
+echo -e $e '     •••••••••••••••••••••••••••••••••••••••'
+echo -e $e ' Jangan Gampang Kecewa Dengan Hasil Kita Sendiri'
+sleep 1
+echo -e $e '             Tekan Enter Untuk Masuk'
+read enter
+python2 Creator.py
+echo -e $f 'Masukkan Nama Untuk Script Defacenya'
+echo -e $d 'Contoh : GxDDP.html'
+read -p ' [B4n9Z4tt3r5]=>> ' name
+mv script.html $name
+echo -e $e 'Selesai Pembuatan =>> Selamat Hack Website'
+echo -e $f 'Tekan Enter Untuk Keluar'
+read enter
+exit
