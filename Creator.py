@@ -53,7 +53,7 @@ if (pos > msg.length) pos = 0
 window.setTimeout("scrollMSG()",80);
 }
 scrollMSG();
-//]]></script>
+//]]></script></head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Jolly+Lodger" rel="stylesheet" type="text/css" />
 <br><iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src=" """
